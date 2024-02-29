@@ -19,7 +19,7 @@
 					<v8:content>PAPI: Сообщения сервисов интеграции</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Сообщения сервисов интеграции V2024.02.23</Comment>
+			<Comment>Сообщения сервисов интеграции V2024.03.01</Comment>
 			<DefaultForm>ExternalDataProcessor.PAPI_СообщенияСервисовИнтеграции.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
