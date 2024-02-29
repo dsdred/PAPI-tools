@@ -19,7 +19,7 @@
 					<v8:content>PAPI: Настройка состава истории данных</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Настройка сервисов интеграции V2023.06.19</Comment>
+			<Comment>Настройка состава истории данных V2023.06.19</Comment>
 			<DefaultForm>ExternalDataProcessor.PAPI_НастройкаСоставаИсторииДанных.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
