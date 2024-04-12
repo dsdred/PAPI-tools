@@ -14,222 +14,320 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<Table name="Список" id="1">
-			<Representation>Tree</Representation>
-			<ChangeRowSet>false</ChangeRowSet>
-			<ChangeRowOrder>false</ChangeRowOrder>
-			<AutoMaxHeight>false</AutoMaxHeight>
-			<AutoMaxRowsCount>false</AutoMaxRowsCount>
-			<SelectionMode>SingleRow</SelectionMode>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>Список</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="СписокКонтекстноеМеню" id="2">
-				<Autofill>false</Autofill>
-			</ContextMenu>
-			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
-				<Autofill>false</Autofill>
-				<ChildItems>
-					<ButtonGroup name="ГруппаКнопокФлажки" id="50">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Группа кнопок флажки</v8:content>
-							</v8:item>
-						</Title>
-						<ToolTip>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Группа кнопок флажки</v8:content>
-							</v8:item>
-						</ToolTip>
-						<Representation>Compact</Representation>
-						<ExtendedTooltip name="ГруппаКнопокФлажкиРасширеннаяПодсказка" id="51"/>
-						<ChildItems>
-							<Button name="СписокСнятьФлажки" id="52">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.СнятьФлажки</CommandName>
-								<Shape>Usual</Shape>
-								<ExtendedTooltip name="СписокСнятьФлажкиРасширеннаяПодсказка" id="53"/>
-							</Button>
-							<Button name="СписокУстановитьФлажки" id="54">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.УстановитьФлажки</CommandName>
-								<ExtendedTooltip name="СписокУстановитьФлажкиРасширеннаяПодсказка" id="55"/>
-							</Button>
-						</ChildItems>
-					</ButtonGroup>
-					<Button name="СписокВывестиСписок" id="56">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.OutputList</CommandName>
-						<ExtendedTooltip name="СписокВывестиСписокРасширеннаяПодсказка" id="57"/>
-					</Button>
-					<Button name="СписокНайти" id="58">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.Find</CommandName>
-						<ExtendedTooltip name="СписокНайтиРасширеннаяПодсказка" id="59"/>
-					</Button>
-					<Button name="СписокОтменитьПоиск" id="60">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.CancelSearch</CommandName>
-						<ExtendedTooltip name="СписокОтменитьПоискРасширеннаяПодсказка" id="61"/>
-					</Button>
-				</ChildItems>
-			</AutoCommandBar>
-			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
-			<SearchStringAddition name="СписокСтрокаПоиска" id="5">
-				<AdditionSource>
-					<Item>Список</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="6"/>
-				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8">
-				<AdditionSource>
-					<Item>Список</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="9"/>
-				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="СписокУправлениеПоиском" id="11">
-				<AdditionSource>
-					<Item>Список</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
-				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
-			</Events>
-			<ChildItems>
-				<CheckBoxField name="СписокАктивность" id="20">
-					<DataPath>Список.Активность</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<HeaderPicture>
-						<xr:Ref>StdPicture.CheckAll</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
-					</HeaderPicture>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="СписокАктивностьКонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="СписокАктивностьРасширеннаяПодсказка" id="22"/>
-					<Events>
-						<Event name="OnChange">СписокАктивностьПриИзменении</Event>
-					</Events>
-				</CheckBoxField>
-				<InputField name="СписокИмя" id="14">
-					<DataPath>Список.Имя</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="СписокИмяКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="СписокИмяРасширеннаяПодсказка" id="16"/>
-				</InputField>
-			</ChildItems>
-		</Table>
-		<UsualGroup name="ГруппаНастройки" id="46">
+		<Pages name="ГруппаСтраницы" id="62">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки</v8:content>
+					<v8:content>Группа страницы</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа настройки</v8:content>
+					<v8:content>Группа страницы</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>Vertical</Group>
-			<Behavior>Collapsible</Behavior>
-			<ControlRepresentation>Picture</ControlRepresentation>
-			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="47"/>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="63"/>
 			<ChildItems>
-				<InputField name="АдресВнешнегоСервисаИнтеграции" id="30">
-					<DataPath>АдресВнешнегоСервисаИнтеграции</DataPath>
-					<TitleLocation>Top</TitleLocation>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<HorizontalStretch>true</HorizontalStretch>
-					<VerticalStretch>false</VerticalStretch>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="АдресВнешнегоСервисаИнтеграцииКонтекстноеМеню" id="31"/>
-					<ExtendedTooltip name="АдресВнешнегоСервисаИнтеграцииРасширеннаяПодсказка" id="32"/>
-				</InputField>
-				<InputField name="ИмяПользователя" id="33">
-					<DataPath>ИмяПользователя</DataPath>
-					<TitleLocation>Top</TitleLocation>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<HorizontalStretch>true</HorizontalStretch>
-					<VerticalStretch>false</VerticalStretch>
-					<ListChoiceMode>true</ListChoiceMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="34"/>
-					<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="35"/>
-				</InputField>
-				<InputField name="ИмяПользователяВнешнегоСервисаИнтеграции" id="36">
-					<DataPath>ИмяПользователяВнешнегоСервисаИнтеграции</DataPath>
-					<TitleLocation>Top</TitleLocation>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<HorizontalStretch>true</HorizontalStretch>
-					<VerticalStretch>false</VerticalStretch>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ИмяПользователяВнешнегоСервисаИнтеграцииКонтекстноеМеню" id="37"/>
-					<ExtendedTooltip name="ИмяПользователяВнешнегоСервисаИнтеграцииРасширеннаяПодсказка" id="38"/>
-				</InputField>
-				<UsualGroup name="ГруппаПароль" id="42">
+				<Page name="СтраницаНастройки" id="64">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа пароль</v8:content>
+							<v8:content>Настройки</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа пароль</v8:content>
+							<v8:content>Страница настройки</v8:content>
 						</v8:item>
 					</ToolTip>
-					<HorizontalStretch>true</HorizontalStretch>
-					<Behavior>Usual</Behavior>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="43"/>
+					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="65"/>
 					<ChildItems>
-						<InputField name="ПарольПользователяВнешнегоСервисаИнтеграции" id="39">
-							<DataPath>ПарольПользователяВнешнегоСервисаИнтеграции</DataPath>
-							<TitleLocation>Top</TitleLocation>
+						<Table name="Список" id="1">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<AutoMaxRowsCount>false</AutoMaxRowsCount>
+							<SelectionMode>SingleRow</SelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Список</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокКонтекстноеМеню" id="2">
+								<Autofill>false</Autofill>
+							</ContextMenu>
+							<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="ГруппаКнопокФлажки" id="50">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа кнопок флажки</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа кнопок флажки</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="ГруппаКнопокФлажкиРасширеннаяПодсказка" id="51"/>
+										<ChildItems>
+											<Button name="СписокСнятьФлажки" id="52">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СнятьФлажки</CommandName>
+												<Shape>Usual</Shape>
+												<ExtendedTooltip name="СписокСнятьФлажкиРасширеннаяПодсказка" id="53"/>
+											</Button>
+											<Button name="СписокУстановитьФлажки" id="54">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УстановитьФлажки</CommandName>
+												<ExtendedTooltip name="СписокУстановитьФлажкиРасширеннаяПодсказка" id="55"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокВывестиСписок" id="56">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Список.StandardCommand.OutputList</CommandName>
+										<ExtendedTooltip name="СписокВывестиСписокРасширеннаяПодсказка" id="57"/>
+									</Button>
+									<Button name="СписокНайти" id="58">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Список.StandardCommand.Find</CommandName>
+										<ExtendedTooltip name="СписокНайтиРасширеннаяПодсказка" id="59"/>
+									</Button>
+									<Button name="СписокОтменитьПоиск" id="60">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Список.StandardCommand.CancelSearch</CommandName>
+										<ExtendedTooltip name="СписокОтменитьПоискРасширеннаяПодсказка" id="61"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="СписокСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="СписокАктивность" id="20">
+									<DataPath>Список.Активность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>StdPicture.CheckAll</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СписокАктивностьКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="СписокАктивностьРасширеннаяПодсказка" id="22"/>
+									<Events>
+										<Event name="OnChange">СписокАктивностьПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="СписокИмя" id="14">
+									<DataPath>Список.Имя</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СписокИмяКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="СписокИмяРасширеннаяПодсказка" id="16"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаНастройки" id="46">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="47"/>
+							<ChildItems>
+								<InputField name="АдресВнешнегоСервисаИнтеграции" id="30">
+									<DataPath>АдресВнешнегоСервисаИнтеграции</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="АдресВнешнегоСервисаИнтеграцииКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="АдресВнешнегоСервисаИнтеграцииРасширеннаяПодсказка" id="32"/>
+								</InputField>
+								<InputField name="ИмяПользователя" id="33">
+									<DataPath>ИмяПользователя</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="35"/>
+								</InputField>
+								<InputField name="ИмяПользователяВнешнегоСервисаИнтеграции" id="36">
+									<DataPath>ИмяПользователяВнешнегоСервисаИнтеграции</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИмяПользователяВнешнегоСервисаИнтеграцииКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ИмяПользователяВнешнегоСервисаИнтеграцииРасширеннаяПодсказка" id="38"/>
+								</InputField>
+								<UsualGroup name="ГруппаПароль" id="42">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пароль</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пароль</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="43"/>
+									<ChildItems>
+										<InputField name="ПарольПользователяВнешнегоСервисаИнтеграции" id="39">
+											<DataPath>ПарольПользователяВнешнегоСервисаИнтеграции</DataPath>
+											<TitleLocation>Top</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПарольПользователяВнешнегоСервисаИнтеграцииКонтекстноеМеню" id="40"/>
+											<ExtendedTooltip name="ПарольПользователяВнешнегоСервисаИнтеграцииРасширеннаяПодсказка" id="41"/>
+										</InputField>
+										<Button name="ПоказатьПароль" id="44">
+											<Type>UsualButton</Type>
+											<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+											<CommandName>Form.Command.ПоказатьПароль</CommandName>
+											<ExtendedTooltip name="ПоказатьПарольРасширеннаяПодсказка" id="45"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="ЗаписатьНастройки" id="48">
+									<Type>UsualButton</Type>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<CommandName>Form.Command.ЗаписатьНастройки</CommandName>
+									<ExtendedTooltip name="ЗаписатьНастройкиРасширеннаяПодсказка" id="49"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПереносНастроек" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перенос настроек</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница перенос настроек</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПереносНастроекРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<CommandBar name="ГруппаКоманднаяПанель" id="71">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="72"/>
+							<ChildItems>
+								<Button name="ПрочитатьНастройки" id="73">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ПрочитатьНастройки</CommandName>
+									<ExtendedTooltip name="ПрочитатьНастройкиРасширеннаяПодсказка" id="74"/>
+								</Button>
+								<Button name="ЗагрузитьНастройки" id="75">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ЗагрузитьНастройки</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗагрузитьНастройкиРасширеннаяПодсказка" id="76"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<InputField name="ТекстНастроек" id="68">
+							<DataPath>ТекстНастроек</DataPath>
+							<TitleLocation>None</TitleLocation>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<AutoMaxHeight>false</AutoMaxHeight>
 							<HorizontalStretch>true</HorizontalStretch>
-							<VerticalStretch>false</VerticalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ExtendedEdit>true</ExtendedEdit>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ПарольПользователяВнешнегоСервисаИнтеграцииКонтекстноеМеню" id="40"/>
-							<ExtendedTooltip name="ПарольПользователяВнешнегоСервисаИнтеграцииРасширеннаяПодсказка" id="41"/>
+							<ContextMenu name="ТекстНастроекКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ТекстНастроекРасширеннаяПодсказка" id="70"/>
 						</InputField>
-						<Button name="ПоказатьПароль" id="44">
-							<Type>UsualButton</Type>
-							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
-							<CommandName>Form.Command.ПоказатьПароль</CommandName>
-							<ExtendedTooltip name="ПоказатьПарольРасширеннаяПодсказка" id="45"/>
-						</Button>
 					</ChildItems>
-				</UsualGroup>
-				<Button name="ЗаписатьНастройки" id="48">
-					<Type>UsualButton</Type>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-					<CommandName>Form.Command.ЗаписатьНастройки</CommandName>
-					<ExtendedTooltip name="ЗаписатьНастройкиРасширеннаяПодсказка" id="49"/>
-				</Button>
+				</Page>
 			</ChildItems>
-		</UsualGroup>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -370,6 +468,21 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ТекстНастроек" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ПоказатьПароль" id="1">
@@ -451,6 +564,46 @@
 			</Picture>
 			<Action>СнятьФлажки</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПрочитатьНастройки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПрочитатьНастройки</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗагрузитьНастройки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьНастройки</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>
