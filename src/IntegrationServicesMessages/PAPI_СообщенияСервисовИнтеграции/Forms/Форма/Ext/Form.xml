@@ -12,15 +12,9 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа страницы</v8:content>
+					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа страницы</v8:content>
-				</v8:item>
-			</ToolTip>
 			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="36"/>
 			<ChildItems>
@@ -31,29 +25,16 @@
 							<v8:content>Сервисы интеграции</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница общая</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="СтраницаОбщаяРасширеннаяПодсказка" id="38"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаКомандыСписка" id="229">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа команды списка</v8:content>
+									<v8:content>Команды списка</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа команды списка</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКомандыСпискаРасширеннаяПодсказка" id="230"/>
@@ -62,15 +43,9 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа командная панель список</v8:content>
+											<v8:content>Командная панель списка</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа командная панель список</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="ГруппаКоманднаяПанельСписокРасширеннаяПодсказка" id="228"/>
 									<ChildItems>
 										<Button name="СписокОбновить" id="166">
@@ -89,18 +64,11 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа автообновления</v8:content>
+											<v8:content>Автообновление</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа автообновления</v8:content>
-										</v8:item>
-									</ToolTip>
 									<HorizontalStretch>true</HorizontalStretch>
 									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаАвтообновленияРасширеннаяПодсказка" id="232"/>
@@ -203,30 +171,18 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа вертикальная</v8:content>
+											<v8:content>Вертикальная группировка</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа вертикальная</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="ГруппаВертикальнаяРасширеннаяПодсказка" id="34"/>
 									<ChildItems>
 										<ColumnGroup name="СписокГруппаГоризонтОбщая" id="29">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Список группа горизонт общая</v8:content>
+													<v8:content>Горизонтальная группировка списка</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Список группа горизонт общая</v8:content>
-												</v8:item>
-											</ToolTip>
 											<Group>Horizontal</Group>
 											<ExtendedTooltip name="СписокГруппаГоризонтОбщаяРасширеннаяПодсказка" id="30"/>
 											<ChildItems>
@@ -260,15 +216,9 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Список группа внешнее имя</v8:content>
+													<v8:content>Горизонтальная группировка внешнее имя</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Список группа внешнее имя</v8:content>
-												</v8:item>
-											</ToolTip>
 											<Group>Horizontal</Group>
 											<ExtendedTooltip name="СписокГруппаВнешнееИмяРасширеннаяПодсказка" id="32"/>
 											<ChildItems>
@@ -313,48 +263,29 @@
 							<v8:content>Отборы</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница отбора</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="СтраницаОтбораРасширеннаяПодсказка" id="42"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаОтборкиСообщений" id="43">
+						<UsualGroup name="ГруппаОтборыСообщений" id="43">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Фильтр сообщений</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа отборки сообщений</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Vertical</Group>
 							<ChildrenAlign>None</ChildrenAlign>
 							<Behavior>Collapsible</Behavior>
 							<ControlRepresentation>Picture</ControlRepresentation>
-							<ExtendedTooltip name="ГруппаОтборкиСообщенийРасширеннаяПодсказка" id="44"/>
+							<ExtendedTooltip name="ГруппаОтборыСообщенийРасширеннаяПодсказка" id="44"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаОтборИдентификатор" id="194">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отбор идентификатор</v8:content>
+											<v8:content>Отбор по идентификатору</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отбор идентификатор</v8:content>
-										</v8:item>
-									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОтборИдентификаторРасширеннаяПодсказка" id="195"/>
@@ -383,17 +314,10 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отбор идентификатор сообщения запроса</v8:content>
+											<v8:content>Отбор по идентификатору сообщения запроса</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отбор идентификатор сообщения запроса</v8:content>
-										</v8:item>
-									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОтборИдентификаторСообщенияЗапросаРасширеннаяПодсказка" id="200"/>
@@ -422,17 +346,10 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа дата отправки</v8:content>
+											<v8:content>Отбор по дате отправки</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа дата отправки</v8:content>
-										</v8:item>
-									</ToolTip>
 									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаДатаОтправкиРасширеннаяПодсказка" id="49"/>
@@ -471,18 +388,11 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа дата устаревания</v8:content>
+											<v8:content>Отбор по дате устаревания</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа дата устаревания</v8:content>
-										</v8:item>
-									</ToolTip>
 									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 									<Group>AlwaysHorizontal</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаДатаУстареванияРасширеннаяПодсказка" id="71"/>
@@ -515,16 +425,9 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отбор отправителя</v8:content>
+											<v8:content>Отбор по отправителям</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отбор отправителя</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОтборОтправителяРасширеннаяПодсказка" id="211"/>
@@ -553,16 +456,9 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отбор получателя</v8:content>
+											<v8:content>Отбор по получателю</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отбор получателя</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОтборПолучателяРасширеннаяПодсказка" id="216"/>
@@ -593,24 +489,16 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа отбор параметры сообщения</v8:content>
+									<v8:content>Отбор по параметрам</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа отбор параметры сообщения</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОтборПараметрыСообщенияРасширеннаяПодсказка" id="221"/>
 							<ChildItems>
 								<CheckBoxField name="ОтборПараметрыСообщения" id="222">
 									<DataPath>ОтборПараметрыСообщения</DataPath>
-									<TitleTextColor>#009646</TitleTextColor>
-									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<TitleTextColor>style:AccentColor</TitleTextColor>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ОтборПараметрыСообщенияКонтекстноеМеню" id="223"/>
@@ -623,15 +511,9 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа КППараметры сообщения</v8:content>
+											<v8:content>Командная панель параметров сообщения</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа КППараметры сообщения</v8:content>
-										</v8:item>
-									</ToolTip>
 									<CommandSource>Item.ПараметрыСообщения</CommandSource>
 									<ExtendedTooltip name="ГруппаКППараметрыСообщенияРасширеннаяПодсказка" id="226"/>
 								</CommandBar>
@@ -699,29 +581,16 @@
 							<v8:content>Сообщения</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница сообщения</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="СтраницаСообщенияРасширеннаяПодсказка" id="40"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаОтбор" id="158">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа отбор</v8:content>
+									<v8:content>Меню отборов</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа отбор</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="159"/>
@@ -730,15 +599,9 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа командная панель</v8:content>
+											<v8:content>Командная панель отборов</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа командная панель</v8:content>
-										</v8:item>
-									</ToolTip>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="186"/>
 									<ChildItems>
@@ -746,15 +609,9 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа флажки</v8:content>
+													<v8:content>Флажки выбора сообщений</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа флажки</v8:content>
-												</v8:item>
-											</ToolTip>
 											<Representation>Compact</Representation>
 											<ExtendedTooltip name="ГруппаФлажкиРасширеннаяПодсказка" id="188"/>
 											<ChildItems>
@@ -872,20 +729,20 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Список сообщений группа</v8:content>
+											<v8:content>Список сообщений основная группировка</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Список сообщений группа</v8:content>
-										</v8:item>
-									</ToolTip>
 									<ExtendedTooltip name="СписокСообщенийГруппаРасширеннаяПодсказка" id="138"/>
 									<ChildItems>
-										<ColumnGroup name="СписокСообщенийГруппа1" id="133">
+										<ColumnGroup name="СписокСообщенийГруппаВерхняя" id="133">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список сообщений группировка верхняя</v8:content>
+												</v8:item>
+											</Title>
 											<Group>Horizontal</Group>
-											<ExtendedTooltip name="СписокСообщенийГруппа1РасширеннаяПодсказка" id="134"/>
+											<ExtendedTooltip name="СписокСообщенийГруппаВерхняяРасширеннаяПодсказка" id="134"/>
 											<ChildItems>
 												<LabelField name="СписокСообщенийИдентификатор" id="112">
 													<DataPath>СписокСообщений.Идентификатор</DataPath>
@@ -912,9 +769,15 @@
 												</InputField>
 											</ChildItems>
 										</ColumnGroup>
-										<ColumnGroup name="СписокСообщенийГруппа2" id="135">
+										<ColumnGroup name="СписокСообщенийГруппаНижняя" id="135">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список сообщений группировка нижняя</v8:content>
+												</v8:item>
+											</Title>
 											<Group>Horizontal</Group>
-											<ExtendedTooltip name="СписокСообщенийГруппа2РасширеннаяПодсказка" id="136"/>
+											<ExtendedTooltip name="СписокСообщенийГруппаНижняяРасширеннаяПодсказка" id="136"/>
 											<ChildItems>
 												<LabelField name="СписокСообщенийИдентификаторСообщенияЗапроса" id="118">
 													<DataPath>СписокСообщений.ИдентификаторСообщенияЗапроса</DataPath>
@@ -957,15 +820,9 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Страницы параметры тело</v8:content>
+									<v8:content>Страницы параметров</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Страницы параметры тело</v8:content>
-								</v8:item>
-							</ToolTip>
 							<ExtendedTooltip name="СтраницыПараметрыТелоРасширеннаяПодсказка" id="240"/>
 							<ChildItems>
 								<Page name="Параметры" id="241">
@@ -978,7 +835,7 @@
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Параметры</v8:content>
+											<v8:content>Параметры сообщения</v8:content>
 										</v8:item>
 									</ToolTip>
 									<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="242"/>
@@ -992,6 +849,12 @@
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
 											<DataPath>Items.СписокСообщений.CurrentData.ПараметрыСообщения</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Параметры сообщения</v8:content>
+												</v8:item>
+											</Title>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="СписокСообщенийПараметрыСообщенияКонтекстноеМеню" id="140">
 												<Autofill>false</Autofill>
