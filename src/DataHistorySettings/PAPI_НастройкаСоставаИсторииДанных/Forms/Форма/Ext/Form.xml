@@ -5,9 +5,8 @@
 		<ChildItems>
 			<Button name="ФормаЗаписатьИзменения" id="67" DisplayImportance="VeryHigh">
 				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.ЗаписатьИзменения</CommandName>
-				<BackColor>#FFE721</BackColor>
-				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 				<ExtendedTooltip name="ФормаЗаписатьИзмененияРасширеннаяПодсказка" id="68"/>
 			</Button>
 			<Button name="ФормаНастройкиПоУмолчанию" id="72">
@@ -54,14 +53,7 @@
 					<v8:content>Группа горизонталь</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа горизонталь</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаГоризонтальРасширеннаяПодсказка" id="30"/>
@@ -137,12 +129,6 @@
 									<v8:content>Список метаданных группа</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Список метаданных группа</v8:content>
-								</v8:item>
-							</ToolTip>
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>false</VerticalStretch>
 							<Group>InCell</Group>
@@ -282,12 +268,6 @@
 									<v8:content>Группа дерево метаданных реквизиты объекта</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа дерево метаданных реквизиты объекта</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>InCell</Group>
 							<ExtendedTooltip name="ГруппаДеревоМетаданныхРеквизитыОбъектаРасширеннаяПодсказка" id="108"/>
 							<ChildItems>
@@ -359,14 +339,7 @@
 					<v8:content>Группа отладки</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа отладки</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОтладкиРасширеннаяПодсказка" id="161"/>
@@ -458,12 +431,6 @@
 					<v8:content>Настройки</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа настройки</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Behavior>PopUp</Behavior>
 			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="163"/>
 			<ChildItems>

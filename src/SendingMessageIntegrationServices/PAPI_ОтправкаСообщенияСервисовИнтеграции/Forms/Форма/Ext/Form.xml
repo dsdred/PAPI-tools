@@ -30,14 +30,7 @@
 					<v8:content>Группа шапка</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа шапка</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="76"/>
@@ -49,14 +42,7 @@
 							<v8:content>Группа основная</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа основная</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="48"/>
@@ -82,14 +68,7 @@
 							<v8:content>Группа интеграционный сервис</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа интеграционный сервис</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаИнтеграционныйСервисРасширеннаяПодсказка" id="71"/>
@@ -138,12 +117,6 @@
 					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Страницы</v8:content>
-				</v8:item>
-			</ToolTip>
 			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
@@ -154,12 +127,6 @@
 							<v8:content>Параметры</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница параметры</v8:content>
-						</v8:item>
-					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
 					<VerticalStretch>true</VerticalStretch>
 					<ExtendedTooltip name="СтраницаПараметрыРасширеннаяПодсказка" id="4"/>
@@ -237,12 +204,6 @@
 							<v8:content>Получатели</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница получатели</v8:content>
-						</v8:item>
-					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
 					<VerticalStretch>true</VerticalStretch>
 					<ExtendedTooltip name="СтраницаПолучателиРасширеннаяПодсказка" id="25"/>
@@ -300,12 +261,6 @@
 							<v8:content>Сообщение</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница тело</v8:content>
-						</v8:item>
-					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
 					<VerticalStretch>true</VerticalStretch>
 					<ExtendedTooltip name="СтраницаТелоРасширеннаяПодсказка" id="43"/>
@@ -318,6 +273,7 @@
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>true</VerticalStretch>
 							<MultiLine>true</MultiLine>
+							<ExtendedEdit>true</ExtendedEdit>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ТекстСообщенияКонтекстноеМеню" id="45"/>
 							<ExtendedTooltip name="ТекстСообщенияРасширеннаяПодсказка" id="46"/>
@@ -347,12 +303,6 @@
 					<v8:content>Группа командная панель</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа командная панель</v8:content>
-				</v8:item>
-			</ToolTip>
 			<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="62"/>
 			<ChildItems>
 				<Button name="ОтправитьСообщение" id="59">
@@ -620,12 +570,6 @@
 					<v8:content>Выполнить обработку</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>СервисыИнтеграции.ВыполнитьОбработку()</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>

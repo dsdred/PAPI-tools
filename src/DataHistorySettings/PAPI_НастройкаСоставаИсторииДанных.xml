@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<ExternalDataProcessor uuid="9a9ccc93-a29f-40ee-a8ed-e806c592f0bc">
+	<ExternalDataProcessor uuid="6237d812-f6cd-4c56-b076-17a52992c878">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>48505641-825b-4f57-862c-fc23ee34ba96</xr:ObjectId>
+				<xr:ObjectId>82677cb2-6563-4e4a-8bc2-bc60f174798f</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.PAPI_НастройкаСоставаИсторииДанных" category="Object">
-				<xr:TypeId>bc2f699d-d5bf-427d-8366-9384b9dc1ddc</xr:TypeId>
-				<xr:ValueId>d17606cd-ccd8-4eda-90c1-ee2797bddc66</xr:ValueId>
+				<xr:TypeId>b6557441-843a-4743-9cf6-34050a646164</xr:TypeId>
+				<xr:ValueId>cf1b7619-ff6a-4a44-9eef-e714e4e1c55d</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -19,7 +19,7 @@
 					<v8:content>PAPI: Настройка состава истории данных</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Настройка состава истории данных V2023.06.19</Comment>
+			<Comment>Настройка состава истории данных V2024.05.07</Comment>
 			<DefaultForm>ExternalDataProcessor.PAPI_НастройкаСоставаИсторииДанных.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>

@@ -18,15 +18,9 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа страницы</v8:content>
+					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа страницы</v8:content>
-				</v8:item>
-			</ToolTip>
 			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="63"/>
 			<ChildItems>
@@ -37,12 +31,6 @@
 							<v8:content>Настройки</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница настройки</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="65"/>
 					<ChildItems>
 						<Table name="Список" id="1">
@@ -70,12 +58,6 @@
 												<v8:content>Группа кнопок флажки</v8:content>
 											</v8:item>
 										</Title>
-										<ToolTip>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Группа кнопок флажки</v8:content>
-											</v8:item>
-										</ToolTip>
 										<Representation>Compact</Representation>
 										<ExtendedTooltip name="ГруппаКнопокФлажкиРасширеннаяПодсказка" id="51"/>
 										<ChildItems>
@@ -169,12 +151,6 @@
 									<v8:content>Настройки</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа настройки</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Vertical</Group>
 							<Behavior>Collapsible</Behavior>
 							<ControlRepresentation>Picture</ControlRepresentation>
@@ -221,14 +197,7 @@
 											<v8:content>Группа пароль</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа пароль</v8:content>
-										</v8:item>
-									</ToolTip>
 									<HorizontalStretch>true</HorizontalStretch>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="43"/>
@@ -270,12 +239,6 @@
 							<v8:content>Перенос настроек</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница перенос настроек</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="СтраницаПереносНастроекРасширеннаяПодсказка" id="67"/>
 					<ChildItems>
 						<CommandBar name="ГруппаКоманднаяПанель" id="71">
@@ -285,12 +248,6 @@
 									<v8:content>Группа командная панель</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа командная панель</v8:content>
-								</v8:item>
-							</ToolTip>
 							<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="72"/>
 							<ChildItems>
 								<Button name="ПрочитатьНастройки" id="73">
@@ -304,7 +261,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Загрузить</v8:content>
+											<v8:content>Записать</v8:content>
 										</v8:item>
 									</Title>
 									<ExtendedTooltip name="ЗагрузитьНастройкиРасширеннаяПодсказка" id="76"/>
