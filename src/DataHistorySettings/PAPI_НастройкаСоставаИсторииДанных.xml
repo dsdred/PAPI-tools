@@ -19,12 +19,14 @@
 					<v8:content>PAPI: Настройка состава истории данных</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Настройка состава истории данных V2024.05.07</Comment>
+			<Comment>Настройка состава истории данных V2024.07.22</Comment>
 			<DefaultForm>ExternalDataProcessor.PAPI_НастройкаСоставаИсторииДанных.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>
+			<Form>ВыборПроизвольнойДаты</Form>
+			<Form>ФормаПрогресса</Form>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>

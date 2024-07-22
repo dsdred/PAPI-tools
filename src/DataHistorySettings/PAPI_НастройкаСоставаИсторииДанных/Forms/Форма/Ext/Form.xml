@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
@@ -7,22 +7,26 @@
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.ЗаписатьИзменения</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаЗаписатьИзмененияРасширеннаяПодсказка" id="68"/>
-			</Button>
-			<Button name="ФормаНастройкиПоУмолчанию" id="72">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.НастройкиПоУмолчанию</CommandName>
-				<ExtendedTooltip name="ФормаНастройкиПоУмолчаниюРасширеннаяПодсказка" id="73"/>
 			</Button>
 			<Button name="ФормаПрочитатьЗаново" id="170">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПрочитатьЗаново</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаПрочитатьЗановоРасширеннаяПодсказка" id="171"/>
 			</Button>
-			<Button name="ФормаИзменитьФорму" id="111">
+			<Button name="ФормаНастройкиПоУмолчанию" id="72">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
-				<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="112"/>
+				<CommandName>Form.Command.НастройкиПоУмолчанию</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаНастройкиПоУмолчаниюРасширеннаяПодсказка" id="73"/>
+			</Button>
+			<Button name="ФормаОчиститьИсторию" id="221">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОчиститьИсторию</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОчиститьИсториюРасширеннаяПодсказка" id="222"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -58,277 +62,541 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаГоризонтальРасширеннаяПодсказка" id="30"/>
 			<ChildItems>
-				<Table name="ДеревоМетаданных" id="1">
-					<Representation>Tree</Representation>
-					<TitleLocation>Top</TitleLocation>
-					<ChangeRowSet>false</ChangeRowSet>
-					<ChangeRowOrder>false</ChangeRowOrder>
-					<Header>false</Header>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<DataPath>ДеревоМетаданных</DataPath>
-					<RowPictureDataPath>ДеревоМетаданных.ИндексКартинки</RowPictureDataPath>
-					<RowsPicture>
-						<xr:Abs>RowsPicture.png</xr:Abs>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
-					</RowsPicture>
+				<UsualGroup name="ГруппаДеревоМетаданных" id="175">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объекты метаданных</v8:content>
+							<v8:content>Группа дерево метаданных</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="ДеревоМетаданныхКонтекстноеМеню" id="2">
-						<Autofill>false</Autofill>
-						<ChildItems>
-							<Button name="ДеревоМетаданныхКонтекстноеМенюДеревоНастройкиПоУмолчанию" id="74">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ДеревоНастройкиПоУмолчанию</CommandName>
-								<ExtendedTooltip name="ДеревоМетаданныхКонтекстноеМенюДеревоНастройкиПоУмолчаниюРасширеннаяПодсказка" id="75"/>
-							</Button>
-							<Button name="ДеревоМетаданныхКонтекстноеМенюДеревоЗаписатьИзменения" id="131">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ДеревоЗаписатьИзменения</CommandName>
-								<ExtendedTooltip name="ДеревоМетаданныхКонтекстноеМенюДеревоЗаписатьИзмененияРасширеннаяПодсказка" id="132"/>
-							</Button>
-						</ChildItems>
-					</ContextMenu>
-					<AutoCommandBar name="ДеревоМетаданныхКоманднаяПанель" id="3">
-						<Autofill>false</Autofill>
-					</AutoCommandBar>
-					<ExtendedTooltip name="ДеревоМетаданныхРасширеннаяПодсказка" id="4"/>
-					<SearchStringAddition name="ДеревоМетаданныхСтрокаПоиска" id="5">
-						<AdditionSource>
-							<Item>ДеревоМетаданных</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ДеревоМетаданныхСтрокаПоискаКонтекстноеМеню" id="6"/>
-						<ExtendedTooltip name="ДеревоМетаданныхСтрокаПоискаРасширеннаяПодсказка" id="7"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ДеревоМетаданныхСостояниеПросмотра" id="8">
-						<AdditionSource>
-							<Item>ДеревоМетаданных</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ДеревоМетаданныхСостояниеПросмотраКонтекстноеМеню" id="9"/>
-						<ExtendedTooltip name="ДеревоМетаданныхСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ДеревоМетаданныхУправлениеПоиском" id="11">
-						<AdditionSource>
-							<Item>ДеревоМетаданных</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="ДеревоМетаданныхУправлениеПоискомКонтекстноеМеню" id="12"/>
-						<ExtendedTooltip name="ДеревоМетаданныхУправлениеПоискомРасширеннаяПодсказка" id="13"/>
-					</SearchControlAddition>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дерево метаданных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДеревоМетаданныхРасширеннаяПодсказка" id="176"/>
 					<ChildItems>
-						<ColumnGroup name="СписокМетаданныхГруппа" id="31">
-							<EnableContentChange>true</EnableContentChange>
+						<LabelDecoration name="ДекорацияДеревоМетаданных" id="184">
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объекты метаданных:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияДеревоМетаданныхКонтекстноеМеню" id="185"/>
+							<ExtendedTooltip name="ДекорацияДеревоМетаданныхРасширеннаяПодсказка" id="186"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаФильтрДерева" id="177">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Список метаданных группа</v8:content>
+									<v8:content>Группа фильтр дерева</v8:content>
 								</v8:item>
 							</Title>
-							<HorizontalStretch>true</HorizontalStretch>
-							<VerticalStretch>false</VerticalStretch>
-							<Group>InCell</Group>
-							<ExtendedTooltip name="СписокМетаданныхГруппаРасширеннаяПодсказка" id="32"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа фильтр дерева</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФильтрДереваРасширеннаяПодсказка" id="178"/>
 							<ChildItems>
-								<CheckBoxField name="СписокМетаданныхПометка" id="14">
-									<DataPath>ДеревоМетаданных.Пометка</DataPath>
+								<CommandBar name="ГруппаКПФильтраДерева" id="179">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content> </v8:content>
+											<v8:content>командная панель фильтра дерева</v8:content>
 										</v8:item>
 									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа КПФильтра дерева</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаКПФильтраДереваРасширеннаяПодсказка" id="180"/>
+									<ChildItems>
+										<SearchStringAddition name="ДеревоМетаданныхКПСтрокаПоиска" id="181">
+											<AdditionSource>
+												<Item>ДеревоМетаданных</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дерево метаданных КПСтрока поиска</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ДеревоМетаданныхКПСтрокаПоискаКонтекстноеМеню" id="182"/>
+											<ExtendedTooltip name="ДеревоМетаданныхКПСтрокаПоискаРасширеннаяПодсказка" id="183"/>
+										</SearchStringAddition>
+										<ButtonGroup name="ГруппаРасширенногоПоискаДереваМетаданных" id="199">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расширенного поиска дерева метаданных</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расширенного поиска дерева метаданных</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>Compact</Representation>
+											<ExtendedTooltip name="ГруппаРасширенногоПоискаДереваМетаданныхРасширеннаяПодсказка" id="200"/>
+											<ChildItems>
+												<Button name="Найти" id="201">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ДеревоМетаданных.StandardCommand.Find</CommandName>
+													<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="202"/>
+												</Button>
+												<Button name="ОтменитьПоиск" id="203">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ДеревоМетаданных.StandardCommand.CancelSearch</CommandName>
+													<ExtendedTooltip name="ОтменитьПоискРасширеннаяПодсказка" id="204"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ДеревоМетаданных" id="1">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>ДеревоМетаданных</DataPath>
+							<RowPictureDataPath>ДеревоМетаданных.ИндексКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Abs>RowsPicture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объекты метаданных</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДеревоМетаданныхКонтекстноеМеню" id="2">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДеревоМетаданныхКонтекстноеМенюДеревоНастройкиПоУмолчанию" id="74">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДеревоНастройкиПоУмолчанию</CommandName>
+										<ExtendedTooltip name="ДеревоМетаданныхКонтекстноеМенюДеревоНастройкиПоУмолчаниюРасширеннаяПодсказка" id="75"/>
+									</Button>
+									<Button name="ДеревоМетаданныхКонтекстноеМенюДеревоЗаписатьИзменения" id="131">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДеревоЗаписатьИзменения</CommandName>
+										<ExtendedTooltip name="ДеревоМетаданныхКонтекстноеМенюДеревоЗаписатьИзмененияРасширеннаяПодсказка" id="132"/>
+									</Button>
+									<ButtonGroup name="ДеревоМетаданныхКонтекстноеМенюГруппаРасширенногоПоиска" id="215">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Дерево метаданных контекстное меню группа расширенного поиска</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Дерево метаданных контекстное меню группа расширенного поиска</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ДеревоМетаданныхКонтекстноеМенюГруппаРасширенногоПоискаРасширеннаяПодсказка" id="216"/>
+										<ChildItems>
+											<Button name="ДеревоМетаданныхКонтекстноеМенюНайти" id="211">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ДеревоМетаданных.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ДеревоМетаданныхКонтекстноеМенюНайтиРасширеннаяПодсказка" id="212"/>
+											</Button>
+											<Button name="ДеревоМетаданныхКонтекстноеМенюОтменитьПоиск" id="213">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ДеревоМетаданных.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ДеревоМетаданныхКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="214"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="ДеревоМетаданныхКонтекстноеМенюОчиститьИсториюДанныхТекущегоОбъекта" id="223">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОчиститьИсториюДанныхТекущегоОбъекта</CommandName>
+										<ExtendedTooltip name="ДеревоМетаданныхКонтекстноеМенюОчиститьИсториюДанныхТекущегоОбъектаРасширеннаяПодсказка" id="224"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ДеревоМетаданныхКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоМетаданныхРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ДеревоМетаданныхСтрокаПоиска" id="5">
+								<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+								<AdditionSource>
+									<Item>ДеревоМетаданных</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданныхСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ДеревоМетаданныхСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоМетаданныхСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>ДеревоМетаданных</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданныхСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ДеревоМетаданныхСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоМетаданныхУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>ДеревоМетаданных</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданныхУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ДеревоМетаданныхУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="СписокМетаданныхГруппа" id="31">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список метаданных группа</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="СписокМетаданныхГруппаРасширеннаяПодсказка" id="32"/>
+									<ChildItems>
+										<CheckBoxField name="СписокМетаданныхПометка" id="14">
+											<DataPath>ДеревоМетаданных.Пометка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>вкл/выкл историю данных</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>Directly</EditMode>
+											<ShowInFooter>false</ShowInFooter>
+											<ThreeState>true</ThreeState>
+											<ContextMenu name="СписокМетаданныхПометкаКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="СписокМетаданныхПометкаРасширеннаяПодсказка" id="16"/>
+											<Events>
+												<Event name="OnChange">СписокМетаданныхПометкаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="СписокМетаданныхСиноним" id="23">
+											<DataPath>ДеревоМетаданных.Синоним</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="СписокМетаданныхСинонимКонтекстноеМеню" id="24"/>
+											<ExtendedTooltip name="СписокМетаданныхСинонимРасширеннаяПодсказка" id="25"/>
+										</InputField>
+										<InputField name="СписокМетаданныхПолноеИмя" id="26">
+											<DataPath>ДеревоМетаданных.ПолноеИмя</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокМетаданныхПолноеИмяКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="СписокМетаданныхПолноеИмяРасширеннаяПодсказка" id="28"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<PictureField name="ДеревоМетаданныхИспользованиеПолей" id="125">
+									<DataPath>ДеревоМетаданных.ИспользованиеПолей</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Abs>ValuesPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ДеревоМетаданныхИспользованиеПолейКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="ДеревоМетаданныхИспользованиеПолейРасширеннаяПодсказка" id="127"/>
+								</PictureField>
+								<PictureField name="ДеревоМетаданныхВключеноВКонфигураторе" id="69">
+									<DataPath>ДеревоМетаданных.ВключеноВКонфигураторе</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<TitleLocation>None</TitleLocation>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>вкл/выкл историю данных</v8:content>
+											<v8:content>Включено в конфигураторе</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>Directly</EditMode>
-									<ShowInFooter>false</ShowInFooter>
-									<ThreeState>true</ThreeState>
-									<ContextMenu name="СписокМетаданныхПометкаКонтекстноеМеню" id="15"/>
-									<ExtendedTooltip name="СписокМетаданныхПометкаРасширеннаяПодсказка" id="16"/>
-									<Events>
-										<Event name="OnChange">СписокМетаданныхПометкаПриИзменении</Event>
-									</Events>
-								</CheckBoxField>
-								<InputField name="СписокМетаданныхСиноним" id="23">
-									<DataPath>ДеревоМетаданных.Синоним</DataPath>
-									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Right</HorizontalAlign>
 									<EditMode>EnterOnInput</EditMode>
-									<HorizontalStretch>true</HorizontalStretch>
-									<ContextMenu name="СписокМетаданныхСинонимКонтекстноеМеню" id="24"/>
-									<ExtendedTooltip name="СписокМетаданныхСинонимРасширеннаяПодсказка" id="25"/>
-								</InputField>
-								<InputField name="СписокМетаданныхПолноеИмя" id="26">
-									<DataPath>ДеревоМетаданных.ПолноеИмя</DataPath>
-									<UserVisible>
-										<xr:Common>false</xr:Common>
-									</UserVisible>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СписокМетаданныхПолноеИмяКонтекстноеМеню" id="27"/>
-									<ExtendedTooltip name="СписокМетаданныхПолноеИмяРасширеннаяПодсказка" id="28"/>
-								</InputField>
+									<ValuesPicture>
+										<xr:Abs>ValuesPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ДеревоМетаданныхВключеноВКонфигуратореКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ДеревоМетаданныхВключеноВКонфигуратореРасширеннаяПодсказка" id="71"/>
+								</PictureField>
 							</ChildItems>
-						</ColumnGroup>
-						<PictureField name="ДеревоМетаданныхИспользованиеПолей" id="125">
-							<DataPath>ДеревоМетаданных.ИспользованиеПолей</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ValuesPicture>
-								<xr:Abs>ValuesPicture.png</xr:Abs>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</ValuesPicture>
-							<ContextMenu name="ДеревоМетаданныхИспользованиеПолейКонтекстноеМеню" id="126"/>
-							<ExtendedTooltip name="ДеревоМетаданныхИспользованиеПолейРасширеннаяПодсказка" id="127"/>
-						</PictureField>
-						<PictureField name="ДеревоМетаданныхВключеноВКонфигураторе" id="69">
-							<DataPath>ДеревоМетаданных.ВключеноВКонфигураторе</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Включено в конфигураторе</v8:content>
-								</v8:item>
-							</ToolTip>
-							<HorizontalAlign>Right</HorizontalAlign>
-							<EditMode>EnterOnInput</EditMode>
-							<ValuesPicture>
-								<xr:Abs>ValuesPicture.png</xr:Abs>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</ValuesPicture>
-							<ContextMenu name="ДеревоМетаданныхВключеноВКонфигуратореКонтекстноеМеню" id="70"/>
-							<ExtendedTooltip name="ДеревоМетаданныхВключеноВКонфигуратореРасширеннаяПодсказка" id="71"/>
-						</PictureField>
+						</Table>
 					</ChildItems>
-				</Table>
-				<Table name="ДеревоМетаданныхРеквизитыОбъекта" id="76">
-					<Representation>Tree</Representation>
-					<TitleLocation>Top</TitleLocation>
-					<ChangeRowSet>false</ChangeRowSet>
-					<Header>false</Header>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<InitialTreeView>ExpandAllLevels</InitialTreeView>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта</DataPath>
-					<RowPictureDataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.ИндексКартинки</RowPictureDataPath>
-					<RowsPicture>
-						<xr:Abs>RowsPicture.png</xr:Abs>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
-					</RowsPicture>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДеревоРеквизитыОбъекта" id="187">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Поля и табличные части</v8:content>
+							<v8:content>Группа дерево реквизиты объекта</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаКонтекстноеМеню" id="77">
-						<Autofill>false</Autofill>
-					</ContextMenu>
-					<AutoCommandBar name="ДеревоМетаданныхРеквизитыОбъектаКоманднаяПанель" id="78">
-						<Autofill>false</Autofill>
-					</AutoCommandBar>
-					<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаРасширеннаяПодсказка" id="79"/>
-					<SearchStringAddition name="ДеревоМетаданныхРеквизитыОбъектаСтрокаПоиска" id="80">
-						<AdditionSource>
-							<Item>ДеревоМетаданныхРеквизитыОбъекта</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаСтрокаПоискаКонтекстноеМеню" id="81"/>
-						<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаСтрокаПоискаРасширеннаяПодсказка" id="82"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ДеревоМетаданныхРеквизитыОбъектаСостояниеПросмотра" id="83">
-						<AdditionSource>
-							<Item>ДеревоМетаданныхРеквизитыОбъекта</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаСостояниеПросмотраКонтекстноеМеню" id="84"/>
-						<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаСостояниеПросмотраРасширеннаяПодсказка" id="85"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ДеревоМетаданныхРеквизитыОбъектаУправлениеПоиском" id="86">
-						<AdditionSource>
-							<Item>ДеревоМетаданныхРеквизитыОбъекта</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаУправлениеПоискомКонтекстноеМеню" id="87"/>
-						<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаУправлениеПоискомРасширеннаяПодсказка" id="88"/>
-					</SearchControlAddition>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дерево реквизиты объекта</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДеревоРеквизитыОбъектаРасширеннаяПодсказка" id="188"/>
 					<ChildItems>
-						<ColumnGroup name="ГруппаДеревоМетаданныхРеквизитыОбъекта" id="107">
-							<EnableContentChange>true</EnableContentChange>
+						<LabelDecoration name="ДекорацияДеревоРеквизитыОбъекта" id="189">
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поля и табличные части:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияДеревоРеквизитыОбъектаКонтекстноеМеню" id="190"/>
+							<ExtendedTooltip name="ДекорацияДеревоРеквизитыОбъектаРасширеннаяПодсказка" id="191"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаФильтрДеревоРеквизитыОбъекта" id="192">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа дерево метаданных реквизиты объекта</v8:content>
+									<v8:content>Группа фильтр дерево реквизиты объекта</v8:content>
 								</v8:item>
 							</Title>
-							<Group>InCell</Group>
-							<ExtendedTooltip name="ГруппаДеревоМетаданныхРеквизитыОбъектаРасширеннаяПодсказка" id="108"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа фильтр дерево реквизиты объекта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФильтрДеревоРеквизитыОбъектаРасширеннаяПодсказка" id="193"/>
 							<ChildItems>
-								<CheckBoxField name="ДеревоМетаданныхРеквизитыОбъектаПометка" id="92">
-									<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.Пометка</DataPath>
+								<CommandBar name="ГруппаКПФильтрДеревоРеквизитыОбъекта" id="194">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа КПФильтр дерево реквизиты объекта</v8:content>
+										</v8:item>
+									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>вкл/выкл историю данных</v8:content>
+											<v8:content>Группа КПФильтр дерево реквизиты объекта</v8:content>
 										</v8:item>
 									</ToolTip>
-									<EditMode>EnterOnInput</EditMode>
-									<ThreeState>true</ThreeState>
-									<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаПометкаКонтекстноеМеню" id="93"/>
-									<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаПометкаРасширеннаяПодсказка" id="94"/>
-									<Events>
-										<Event name="OnChange">ДеревоМетаданныхРеквизитыОбъектаПометкаПриИзменении</Event>
-									</Events>
-								</CheckBoxField>
-								<InputField name="ДеревоМетаданныхРеквизитыОбъектаСиноним" id="101">
-									<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.Синоним</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаСинонимКонтекстноеМеню" id="102"/>
-									<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаСинонимРасширеннаяПодсказка" id="103"/>
-								</InputField>
-								<InputField name="ДеревоМетаданныхРеквизитыОбъектаПолноеИмя" id="104">
-									<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.ПолноеИмя</DataPath>
-									<UserVisible>
-										<xr:Common>false</xr:Common>
-									</UserVisible>
-									<ReadOnly>true</ReadOnly>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаПолноеИмяКонтекстноеМеню" id="105"/>
-									<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаПолноеИмяРасширеннаяПодсказка" id="106"/>
-								</InputField>
+									<ExtendedTooltip name="ГруппаКПФильтрДеревоРеквизитыОбъектаРасширеннаяПодсказка" id="195"/>
+									<ChildItems>
+										<SearchStringAddition name="ДеревоРеквизитыОбъектаКПСтрокаПоиска" id="196">
+											<AdditionSource>
+												<Item>ДеревоМетаданныхРеквизитыОбъекта</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дерево реквизиты объекта КПСтрока поиска</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ДеревоРеквизитыОбъектаКПСтрокаПоискаКонтекстноеМеню" id="197"/>
+											<ExtendedTooltip name="ДеревоРеквизитыОбъектаКПСтрокаПоискаРасширеннаяПодсказка" id="198"/>
+										</SearchStringAddition>
+										<ButtonGroup name="ГруппаРасширенногоПоискаДеревоРеквизитыОбъекты" id="205">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расширенного поиска дерево реквизиты объекты</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расширенного поиска дерево реквизиты объекты</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаРасширенногоПоискаДеревоРеквизитыОбъектыРасширеннаяПодсказка" id="206"/>
+											<ChildItems>
+												<Button name="Найти1" id="207">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ДеревоМетаданныхРеквизитыОбъекта.StandardCommand.Find</CommandName>
+													<ExtendedTooltip name="Найти1РасширеннаяПодсказка" id="208"/>
+												</Button>
+												<Button name="ОтменитьПоиск1" id="209">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ДеревоМетаданныхРеквизитыОбъекта.StandardCommand.CancelSearch</CommandName>
+													<ExtendedTooltip name="ОтменитьПоиск1РасширеннаяПодсказка" id="210"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+									</ChildItems>
+								</CommandBar>
 							</ChildItems>
-						</ColumnGroup>
-						<PictureField name="ДеревоМетаданныхРеквизитыОбъектаИспользованиеПолей" id="128">
-							<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.ИспользованиеПолей</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ValuesPicture>
-								<xr:Abs>ValuesPicture.png</xr:Abs>
+						</UsualGroup>
+						<Table name="ДеревоМетаданныхРеквизитыОбъекта" id="76">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта</DataPath>
+							<RowPictureDataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.ИндексКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Abs>RowsPicture.png</xr:Abs>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</ValuesPicture>
-							<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаИспользованиеПолейКонтекстноеМеню" id="129"/>
-							<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаИспользованиеПолейРасширеннаяПодсказка" id="130"/>
-						</PictureField>
-						<PictureField name="ДеревоМетаданныхРеквизитыОбъектаВключеноВКонфигураторе" id="89">
-							<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.ВключеноВКонфигураторе</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<ValuesPicture>
-								<xr:Abs>ValuesPicture.png</xr:Abs>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
-							</ValuesPicture>
-							<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаВключеноВКонфигуратореКонтекстноеМеню" id="90"/>
-							<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаВключеноВКонфигуратореРасширеннаяПодсказка" id="91"/>
-						</PictureField>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поля и табличные части</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаКонтекстноеМеню" id="77">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДеревоМетаданныхРеквизитыОбъектаКонтекстноеМенюНайти" id="217">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ДеревоМетаданныхРеквизитыОбъекта.StandardCommand.Find</CommandName>
+										<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаКонтекстноеМенюНайтиРасширеннаяПодсказка" id="218"/>
+									</Button>
+									<Button name="ДеревоМетаданныхРеквизитыОбъектаКонтекстноеМенюОтменитьПоиск" id="219">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ДеревоМетаданныхРеквизитыОбъекта.StandardCommand.CancelSearch</CommandName>
+										<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="220"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ДеревоМетаданныхРеквизитыОбъектаКоманднаяПанель" id="78">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаРасширеннаяПодсказка" id="79"/>
+							<SearchStringAddition name="ДеревоМетаданныхРеквизитыОбъектаСтрокаПоиска" id="80">
+								<AdditionSource>
+									<Item>ДеревоМетаданныхРеквизитыОбъекта</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаСтрокаПоискаКонтекстноеМеню" id="81"/>
+								<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаСтрокаПоискаРасширеннаяПодсказка" id="82"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоМетаданныхРеквизитыОбъектаСостояниеПросмотра" id="83">
+								<AdditionSource>
+									<Item>ДеревоМетаданныхРеквизитыОбъекта</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаСостояниеПросмотраКонтекстноеМеню" id="84"/>
+								<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаСостояниеПросмотраРасширеннаяПодсказка" id="85"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоМетаданныхРеквизитыОбъектаУправлениеПоиском" id="86">
+								<AdditionSource>
+									<Item>ДеревоМетаданныхРеквизитыОбъекта</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаУправлениеПоискомКонтекстноеМеню" id="87"/>
+								<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаУправлениеПоискомРасширеннаяПодсказка" id="88"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="ГруппаДеревоМетаданныхРеквизитыОбъекта" id="107">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дерево метаданных реквизиты объекта</v8:content>
+										</v8:item>
+									</Title>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ГруппаДеревоМетаданныхРеквизитыОбъектаРасширеннаяПодсказка" id="108"/>
+									<ChildItems>
+										<CheckBoxField name="ДеревоМетаданныхРеквизитыОбъектаПометка" id="92">
+											<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.Пометка</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>вкл/выкл историю данных</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ThreeState>true</ThreeState>
+											<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаПометкаКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаПометкаРасширеннаяПодсказка" id="94"/>
+											<Events>
+												<Event name="OnChange">ДеревоМетаданныхРеквизитыОбъектаПометкаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="ДеревоМетаданныхРеквизитыОбъектаСиноним" id="101">
+											<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.Синоним</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаСинонимКонтекстноеМеню" id="102"/>
+											<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаСинонимРасширеннаяПодсказка" id="103"/>
+										</InputField>
+										<InputField name="ДеревоМетаданныхРеквизитыОбъектаПолноеИмя" id="104">
+											<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.ПолноеИмя</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаПолноеИмяКонтекстноеМеню" id="105"/>
+											<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаПолноеИмяРасширеннаяПодсказка" id="106"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<PictureField name="ДеревоМетаданныхРеквизитыОбъектаИспользованиеПолей" id="128">
+									<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.ИспользованиеПолей</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Abs>ValuesPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаИспользованиеПолейКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаИспользованиеПолейРасширеннаяПодсказка" id="130"/>
+								</PictureField>
+								<PictureField name="ДеревоМетаданныхРеквизитыОбъектаВключеноВКонфигураторе" id="89">
+									<DataPath>Items.ДеревоМетаданных.CurrentData.РеквизитыОбъекта.ВключеноВКонфигураторе</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Abs>ValuesPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ДеревоМетаданныхРеквизитыОбъектаВключеноВКонфигуратореКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ДеревоМетаданныхРеквизитыОбъектаВключеноВКонфигуратореРасширеннаяПодсказка" id="91"/>
+								</PictureField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
-				</Table>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаОтладки" id="160">
@@ -842,6 +1110,41 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПолноеИмяОбработки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное имя обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокМетаданныхТекущейВерсии" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список метаданных текущей версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеДляОчисткиИсторииДанных" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для очистки истории данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ЗаписатьИзменения" id="1">
@@ -857,7 +1160,12 @@
 					<v8:content>Записать изменения</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ЗаписатьИзменения</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="НастройкиПоУмолчанию" id="2">
 			<Title>
@@ -869,10 +1177,15 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки по умолчанию</v8:content>
+					<v8:content>Отменить все выполненные изменения настроек истории данных и загрузить настройки по умолчанию</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateInitialImage</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>НастройкиПоУмолчанию</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ДеревоНастройкиПоУмолчанию" id="3">
 			<Title>
@@ -933,16 +1246,60 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Прочитать настройки заново</v8:content>
+					<v8:content>Перечитать</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Прочитать заново</v8:content>
+					<v8:content>Прочитать сохраненные настройки истории данных</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ПрочитатьЗаново</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОчиститьИсторию" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить историю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить всю историю по всем объектам до указанной даты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DialogStop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчиститьИсторию</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОчиститьИсториюДанныхТекущегоОбъекта" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить историю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить всю историю по выбранному объекту до указанной даты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DialogStop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчиститьИсториюДанныхТекущегоОбъекта</Action>
 		</Command>
 	</Commands>
 </Form>
