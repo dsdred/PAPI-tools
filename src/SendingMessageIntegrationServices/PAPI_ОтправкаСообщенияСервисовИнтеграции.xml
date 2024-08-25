@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<ExternalDataProcessor uuid="68169abf-71b2-4b51-88bf-7b54a7d3a86b">
+	<ExternalDataProcessor uuid="927dec8a-b1e9-433f-9b72-de3efe48ef43">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>197402e3-83dc-4652-a78a-b0efdb5b273f</xr:ObjectId>
+				<xr:ObjectId>f3402040-bcda-48bb-a70e-ad1eeb3aae3f</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.PAPI_ОтправкаСообщенияСервисовИнтеграции" category="Object">
-				<xr:TypeId>7e4d7d64-ed81-4aab-94d5-5846da3c214c</xr:TypeId>
-				<xr:ValueId>ee1908ab-093d-4b45-b4dd-267700cf9984</xr:ValueId>
+				<xr:TypeId>90228f82-09e7-4cc1-9b3a-c71d00ef7f58</xr:TypeId>
+				<xr:ValueId>b96878df-cb81-46ed-8ab2-be8418a47dc6</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -19,7 +19,7 @@
 					<v8:content>PAPI: Отправка сообщения сервисов интеграции</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Отправить сообщения сервисов интеграции V2024.07.04</Comment>
+			<Comment>Отправить сообщения сервисов интеграции V2024.08.25</Comment>
 			<DefaultForm>ExternalDataProcessor.PAPI_ОтправкаСообщенияСервисовИнтеграции.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>

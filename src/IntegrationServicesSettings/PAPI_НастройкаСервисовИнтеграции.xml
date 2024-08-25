@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<ExternalDataProcessor uuid="40603cab-8bb6-4ca6-b138-198ffebe5612">
+	<ExternalDataProcessor uuid="6a514b86-020b-4fa9-a703-121c71de17f4">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>099a5835-e2bd-4c50-aa85-8298e821562b</xr:ObjectId>
+				<xr:ObjectId>c6ffb6ef-b3f8-4c9e-b04c-5368a2491b9d</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.PAPI_НастройкаСервисовИнтеграции" category="Object">
-				<xr:TypeId>0bef37b1-e0e1-48c5-88c9-6cbdffac4228</xr:TypeId>
-				<xr:ValueId>6244a743-4047-4817-8c37-2a762bc776d4</xr:ValueId>
+				<xr:TypeId>6ccccc9e-c262-4a3b-8bb0-d8b2420b0c08</xr:TypeId>
+				<xr:ValueId>abc5671e-27a5-4923-8ae3-061e489512c7</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -19,7 +19,7 @@
 					<v8:content>PAPI: Настройка сервисов интеграции</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Настройка сервисов интеграции V2024.05.07</Comment>
+			<Comment>Настройка сервисов интеграции V2024.08.25</Comment>
 			<DefaultForm>ExternalDataProcessor.PAPI_НастройкаСервисовИнтеграции.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
