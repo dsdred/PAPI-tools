@@ -1,6 +1,6 @@
 # Инструменты для подсиcтемы PAPI
 
-[![OpenYellow](https://img.shields.io/endpoint?url=https://openyellow.neocities.org/badges/4/763113633.json)](https://openyellow.notion.site/openyellow/24727888daa641af95514b46bee4d6f2?p=e89925d9c00f439d8ef210fc5445f8db&pm=s)
+[![OpenYellow](https://img.shields.io/endpoint?url=https://openyellow.org/data/badges/4/763113633.json)](https://openyellow.org/grid?data=top&repo=763113633)
 
 Первоначально инструменты будут обновляется в этом репозитории. После накопления определенного количества фич будут перетекать в подсистему [PAPI](https://github.com/dsdred/PAPI).
 Все обработки самодостаточные, работают без сторонних и типовых библиотек.
